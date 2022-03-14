@@ -259,11 +259,13 @@ def main():
         df = load_data(city, month, day)
 
         #show_data function used twice so input message depends on when function carried out.
+        #initial show_data to view data stats based upon.
         show_data(df, input('Would you like to view your search results before viewing statistics? Please type yes or no: '))
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        #second show_data to review data once stats have been viewed.
         show_data(df, input('Would you like to review your search results? Please type yes or no: '))
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
