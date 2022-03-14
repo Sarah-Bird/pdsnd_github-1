@@ -224,6 +224,7 @@ def user_stats(df):
     # Display counts of gender
     print('These are the total number of customers in each gender category where that information has been given.\n')
     while True:
+        #If lack of gender data causes an error, user informed information not available
         try:
             gender_totals = df.groupby(['Gender'])['Gender'].count()
             print(gender_totals)
