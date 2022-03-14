@@ -5,7 +5,7 @@
 Bikeshare Project
 
 ### Description
-Provides stats based on user input.
+Provides stats based on user input.  User must specify State but can then choose to narrow data down to month and/or day of week.
 
 ### Files used
 chicago.csv
